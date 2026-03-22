@@ -1,11 +1,17 @@
-function Pesq() {
+// conjuntos de variaveis para o componente de pesquisa; o ?: indica que a variavel é opcional, ou seja, pode ser ou não ser passada para o componente
+type FilterProps = {
+  title?: string;
+  placeholder?: string;
+};
+
+function Pesq({title,placeholder}: FilterProps) {
   return (
     // pai
-    <div className="my-3 mx-auto">
+    <div className="my-3 mx-auto ">
       {/* textos */}
       <div className="text-center">
         <p className="text-[#00A2F7] text-3xl">
-          Busque o conteúdo que deseja assistir hoje
+          {title}
         </p>
 
         <p className="text-[#09A3FB] text-[19px]">
@@ -29,13 +35,13 @@ function Pesq() {
 
         <input
           type="text"
-          placeholder="Curso de react"
+          placeholder={placeholder}
           className="w-full bg-white text-gray-600 placeholder-gray-400 
     rounded-lg py-3 pl-11 pr-4 outline-none
     shadow-[3px_4px_12px_1px_rgba(0,0,0,0.10)]
     transition-all duration-200 ease-out
     hover:shadow-[4px_6px_16px_2px_rgba(0,0,0,0.14)]
-    focus:shadow-[4px_6px_18px_2px_rgba(0,0,0,0.16)] cursor-pointer"
+    focus:shadow-[4px_6px_18px_2px_rgba(0,0,0,0.16)] "
         />
       </div>
 
