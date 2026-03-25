@@ -9,7 +9,7 @@ const Header = () => {
        h-15"
       />
       <p
-        className="bg-[#00A2F7] w-39 h-8.75 flex justify-center items-center rounded-lg text-white font-bold cursor-pointer 
+        className="bg-[#00A2F7] w-27 h-8.75 flex justify-center items-center rounded-lg text-white font-bold cursor-pointer 
 shadow-[4px_4px_8px_3px_rgba(0,0,0,0.20)]
 transform transition-all duration-200 ease-out
 hover:scale-105
